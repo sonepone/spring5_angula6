@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-accessing-data-with-jpa.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-accessing-data-with-jpa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-accessing-data-with-jpa_main.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-accessing-data-with-jpa_main.iml" group="spring-accessing-data-with-jpa" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-accessing-data-with-jpa_test.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-accessing-data-with-jpa_test.iml" group="spring-accessing-data-with-jpa" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,53 @@
+buildscript {
+    repositories{
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:2.0.4.RELEASE"
+    }
+}
+
+plugins {
+    id "org.hibernate.gradle.tools" version "1.2.5"
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+
+jar {
+    baseName = 'searchapp'
+    group 'com.packt.sb5be'
+    version '1.0-SNAPSHOT'
+}
+
+sourceCompatibility = 1.8
+targetCompatibility=1.8
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+     // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.0.4.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.0.4.RELEASE'
+    // https://mvnrepository.com/artifact/org.hibernate/hibernate-core
+    compile group: 'org.hibernate', name: 'hibernate-core'
+    runtime 'mysql:mysql-connector-java:8.0.12'
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-devtools
+    runtime group: 'org.springframework.boot', name: 'spring-boot-devtools', version: '2.0.4.RELEASE'
+    testCompile("junit:junit")
+}
+// ovo je da moze da odradi reverse engineering baze,
+// a u application.properties mu je informacija za kacenje na bazu kada je aplikacija startovana
+import org.hibernate.gradle.tools.Schema;
+database {
+    basePackage = "com.packt.sb5be.searchapp.dbmodel.orm"
+    url = "jdbc:mysql://localhost"
+    dialect = "org.hibernate.dialect.MySQL5Dialect"
+    catalog = ["searchapp" : new Schema("searchapp", ".*")]
+
+
+
+}

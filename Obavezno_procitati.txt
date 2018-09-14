@@ -1,0 +1,32 @@
+Primjeri:
+================================================================================
+springData: (12.09.2018.)
+Potpuno je proradio i temeljen je na primjeru:
+Spring Data JPA - webadresa: https://www.journaldev.com/17034/spring-data-jpa
+Preduslov da radi je:
+ - Podignuta mysql baza (Windows servis). root/sone07.
+      Unutar nje je schema: "searchapp".
+      U njoj postoji tabela: people.
+ - Drugi uslov je pokrenut tomee server na kom je deploy-ana aplikacija.
+      c:\> cd C:\apache\apache-tomee-plume-7.0.4\bin
+      c:\> startup
+ - Adresa aplikacije je:
+      http://127.0.0.1:8080/springData/person
+      http://127.0.0.1:8080/springData/personByName/Vlad
+
+Testiranje radjeno:
+chrome://apps/ --> Advanced REST client
+================================================================================
+spring-mvc-example: (13.09.2018.)
+Ovaj primjer je baziran na primjeru:
+Serving Web Content with Spring MVC -  https://spring.io/guides/gs/serving-web-content/
+Preduslov da radi je:
+ - startovana sama aplikacija (nije potreban web server).
+      c:\> cd D:\MojiProjekti\IntelliJ\svn\spring5_angula6\spring-mvc-example
+      c:\> gradlew build (ovo samo ako je zelim nanovo build-ati)
+      c:\> java -jar build/libs/gs-serving-web-content-0.1.0.jar
+
+Adresa za pristup aplikaciji je:
+   - http://127.0.0.1:8080/   ili
+   - http://127.0.0.1:8080/greeting?name=Nebojsa&prezime=Stefanovic
+================================================================================

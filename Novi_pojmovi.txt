@@ -1,0 +1,2 @@
+U ovom dokumentu stoji lista kljucnih rijeci za razlicit stvari koje sam naucio tokom dana rada na razlicitm primjerima iz vijete java web developmenta:
+Spring boot

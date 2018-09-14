@@ -1,0 +1,7 @@
+com\journaldev\spring\repository\PersonRepository.class
+com\journaldev\spring\controller\PersonController.class
+com\journaldev\spring\config\AppInitializer.class
+com\journaldev\spring\config\WebConfig.class
+com\journaldev\spring\model\Person.class
+com\journaldev\spring\services\PersonService.class
+com\journaldev\spring\config\DataConfig.class
